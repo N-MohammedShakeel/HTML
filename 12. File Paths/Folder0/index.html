@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Example of absolute and relative file paths in HTML with animal images."
+    />
+    <title>Absolute vs Relative File Paths</title>
+  </head>
+  <body>
+    <h1>All the Animals</h1>
+
+    <!-- Relative Paths -->
+    <h2>Rabbit (Relative Path):</h2>
+    <img src="./rabbit.png" alt="rabbit" width="200" />
+
+    <h2>Cat (Relative Path):</h2>
+    <img src="./Folder3/cat.png" alt="cat" width="200" />
+
+    <h2>Dog (Relative Path):</h2>
+    <img src="../dog.png" alt="dog" width="200" />
+
+    <h2>Fish (Relative Path):</h2>
+    <img src="../Folder1/fish.png" alt="fish" width="200" />
+
+    <h2>Bird (Relative Path):</h2>
+    <img src="../Folder1/Folder2/bird.png" alt="bird" width="200" />
+
+    <hr />
+
+    <!-- Absolute Paths -->
+    <h2>Rabbit (Absolute Path on Computer):</h2>
+    <img
+      src="D:/VS-Web Development/Udemy_Angela_FullStack/Front-end/4.0 File Paths/Folder0/rabbit.png"
+      alt="rabbit"
+      width="200"
+    />
+
+    <h2>Cat (Absolute Path on Website):</h2>
+    <img src="https://example.com/Folder3/cat.png" alt="cat" width="200" />
+  </body>
+</html>
