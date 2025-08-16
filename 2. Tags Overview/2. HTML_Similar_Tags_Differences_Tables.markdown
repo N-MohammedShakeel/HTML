@@ -1,0 +1,123 @@
+# Differences Between Similar HTML5 Tags in Table Format
+
+This document provides a detailed comparison of similar HTML5 tags that are often confused or used interchangeably, such as `<div>` and `<span>`, `<b>` and `<strong>`, and others. Each pair is presented in a separate table, outlining their purpose, semantics, display type, use cases, accessibility, and examples. The tables are designed for clarity and conciseness, focusing on practical differences relevant to modern web development, without repeating the full HTML tag list or structural explanations.
+
+## 1. `<div>` vs. `<span>`
+
+| **Aspect**          | **`<div>`**                                                                 | **`<span>`**                                                               |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Generic block-level container for grouping content or layout.                | Generic inline container for styling or scripting small text portions.     |
+| **Semantics**       | Non-semantic; no inherent meaning.                                           | Non-semantic; no inherent meaning.                                        |
+| **Display Type**    | Block-level; takes full width, starts on a new line.                        | Inline; flows within text, no line break.                                 |
+| **Use Case**        | Structuring layouts, sections, or containers (e.g., for CSS grids/flexbox). | Styling or targeting specific words/phrases within text.                   |
+| **Accessibility**   | Neutral; used for structure, not content meaning.                            | Neutral; used for inline styling, not content meaning.                    |
+| **Example**         | ```html<br><div class="container"><br>    <h1>Welcome</h1><br></div><br>```<br>*Groups a section for styling.* | ```html<br><p>Welcome to our <span class="highlight">site</span>.</p><br>```<br>*Highlights "site" with CSS.* |
+
+## 2. `<b>` vs. `<strong>`
+
+| **Aspect**          | **`<b>`**                                                                   | **`<strong>`**                                                             |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Applies bold styling for visual emphasis (non-semantic).                    | Indicates important text, typically bold, with semantic meaning.           |
+| **Semantics**       | Non-semantic; purely presentational.                                        | Semantic; conveys importance or urgency.                                  |
+| **Display Type**    | Inline; affects text styling.                                               | Inline; affects text styling.                                             |
+| **Use Case**        | Stylistic bolding (e.g., keywords, product names).                         | Emphasizing critical content (e.g., warnings, key points).                 |
+| **Accessibility**   | Ignored by screen readers; no semantic value.                               | Recognized by screen readers; emphasized vocally.                          |
+| **Example**         | ```html<br><p>Buy our <b>new</b> product.</p><br>```<br>*Bolds "new" for style.* | ```html<br><p><strong>Warning:</strong> Do not proceed.</p><br>```<br>*Emphasizes a warning.* |
+
+## 3. `<i>` vs. `<em>`
+
+| **Aspect**          | **`<i>`**                                                                   | **`<em>`**                                                                 |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Applies italic styling for visual effect (non-semantic).                    | Indicates emphasized text, typically italicized, with semantic meaning.    |
+| **Semantics**       | Non-semantic; purely presentational.                                        | Semantic; conveys stress or emphasis.                                     |
+| **Display Type**    | Inline; affects text styling.                                               | Inline; affects text styling.                                             |
+| **Use Case**        | Stylistic italics (e.g., book titles, foreign words).                       | Emphasizing text for importance or tone (e.g., in dialogue).               |
+| **Accessibility**   | Ignored by screen readers; no semantic value.                               | Recognized by screen readers; emphasized vocally.                          |
+| **Example**         | ```html<br><p>Read <i>War and Peace</i>.</p><br>```<br>*Italicizes a book title.* | ```html<br><p>This is <em>very</em> important.</p><br>```<br>*Emphasizes "very" for tone.* |
+
+## 4. `<ul>` vs. `<ol>`
+
+| **Aspect**          | **`<ul>`**                                                                 | **`<ol>`**                                                                |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Creates an unordered (bulleted) list.                                       | Creates an ordered (numbered) list.                                       |
+| **Semantics**       | Semantic; indicates a list with no specific order.                          | Semantic; indicates a list with a specific order or sequence.             |
+| **Display Type**    | Block-level; contains `<li>` elements.                                      | Block-level; contains `<li>` elements.                                    |
+| **Use Case**        | Navigation menus, feature lists, or unordered items.                        | Steps, rankings, or sequences where order matters.                        |
+| **Accessibility**   | Screen readers announce as a list; order not implied.                       | Screen readers announce as a numbered list; order implied.                |
+| **Example**         | ```html<br><ul><br>    <li>Home</li><br>    <li>About</li><br></ul><br>```<br>*Navigation menu.* | ```html<br><ol><br>    <li>Step 1: Sign up</li><br>    <li>Step 2: Log in</li><br></ol><br>```<br>*Tutorial steps.* |
+
+## 5. `<article>` vs. `<section>`
+
+| **Aspect**          | **`<article>`**                                                             | **`<section>`**                                                           |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Represents independent, self-contained content (e.g., blog post).           | Defines a thematic section of content within a document.                   |
+| **Semantics**       | Semantic; content can stand alone (e.g., syndicable).                       | Semantic; groups related content, not necessarily standalone.             |
+| **Display Type**    | Block-level; contains content or other elements.                            | Block-level; contains content or other elements.                          |
+| **Use Case**        | Blog posts, news articles, or forum posts.                                  | Thematic sections like "About" or "Features" within a page.               |
+| **Accessibility**   | Screen readers treat as standalone content.                                 | Screen readers treat as a section within the document.                    |
+| **Example**         | ```html<br><article><br>    <h2>News</h2><br>    <p>Article content.</p><br></article><br>```<br>*Blog post.* | ```html<br><section><br>    <h2>About Us</h2><br>    <p>Our mission.</p><br></section><br>```<br>*Thematic section.* |
+
+## 6. `<header>` vs. `<footer>`
+
+| **Aspect**          | **`<header>`**                                                              | **`<footer>`**                                                            |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Represents introductory content or navigation for a section or page.        | Represents the footer content of a section or page.                       |
+| **Semantics**       | Semantic; indicates introductory or navigational content.                   | Semantic; indicates concluding or supplementary content.                  |
+| **Display Type**    | Block-level; contains headings, logos, or nav.                              | Block-level; contains copyright, links, or contact info.                  |
+| **Use Case**        | Page or section headers with titles or menus.                               | Page or section footers with metadata or links.                           |
+| **Accessibility**   | Screen readers identify as header content.                                  | Screen readers identify as footer content.                                |
+| **Example**         | ```html<br><header><br>    <h1>Site Title</h1><br>    <nav>...</nav><br></header><br>```<br>*Page header.* | ```html<br><footer><br>    <p>&copy; 2025</p><br></footer><br>```<br>*Page footer.* |
+
+## 7. `<table>` vs. `<div>` (for Layout)
+
+| **Aspect**          | **`<table>`**                                                               | **`<div>`** (for Layout)                                                  |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Displays tabular data in rows and columns.                                  | Generic container for layout or grouping content.                         |
+| **Semantics**       | Semantic; specifically for tabular data.                                    | Non-semantic; used for general layout purposes.                           |
+| **Display Type**    | Block-level; structured for rows (`<tr>`) and cells (`<td>`).               | Block-level; flexible for any layout with CSS.                            |
+| **Use Case**        | Data tables (e.g., spreadsheets, schedules).                                | CSS-based layouts (e.g., grids, flexbox) instead of tables.               |
+| **Accessibility**   | Screen readers interpret as a table with rows/columns.                      | Neutral; requires ARIA roles for accessibility in layouts.                |
+| **Example**         | ```html<br><table><br>    <tr><th>Name</th></tr><br>    <tr><td>John</td></tr><br></table><br>```<br>*Data table.* | ```html<br><div class="grid"><br>    <div>Item 1</div><br>    <div>Item 2</div><br></div><br>```<br>*Grid layout.* |
+
+## 8. `<del>` vs. `<s>`
+
+| **Aspect**          | **`<del>`**                                                                 | **`<s>`**                                                                 |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Marks text that has been deleted or removed.                                | Marks text that is no longer accurate or relevant.                        |
+| **Semantics**       | Semantic; indicates content removed from the document.                      | Semantic; indicates content is outdated but still present.                |
+| **Display Type**    | Inline; typically strikethrough.                                            | Inline; typically strikethrough.                                         |
+| **Use Case**        | Showing edits or removed content (e.g., in version history).                | Indicating outdated information (e.g., old prices).                       |
+| **Accessibility**   | Screen readers may announce as deleted content.                             | Screen readers may announce as outdated content.                          |
+| **Example**         | ```html<br><p>Old: <del>Remove this</del> New text.</p><br>```<br>*Shows deleted text.* | ```html<br><p>Price: <s>$100</s> Now $80.</p><br>```<br>*Shows outdated price.* |
+
+## 9. `<q>` vs. `<blockquote>`
+
+| **Aspect**          | **`<q>`**                                                                   | **`<blockquote>`**                                                        |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Indicates a short inline quotation.                                         | Indicates a block of quoted text from another source.                     |
+| **Semantics**       | Semantic; for brief quotes within text.                                     | Semantic; for longer quotes, often indented.                              |
+| **Display Type**    | Inline; typically wrapped in quotation marks.                               | Block-level; typically indented or styled as a block.                     |
+| **Use Case**        | Short quotes in a sentence.                                                 | Extended quotes or excerpts from external sources.                        |
+| **Accessibility**   | Screen readers announce as a quote.                                         | Screen readers announce as a block quote.                                 |
+| **Example**         | ```html<br><p>She said, <q>Let's learn HTML!</q></p><br>```<br>*Inline quote.* | ```html<br><blockquote><p>A famous speech.</p></blockquote><br>```<br>*Block quote.* |
+
+## 10. `<figure>` vs. `<img>`
+
+| **Aspect**          | **`<figure>`**                                                              | **`<img>`**                                                               |
+|---------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Purpose**         | Represents self-contained content, like images with captions.               | Embeds an image directly.                                                 |
+| **Semantics**       | Semantic; groups content (e.g., image + caption) as a unit.                 | Semantic; specifically for embedding images.                              |
+| **Display Type**    | Block-level; contains `<img>` or other content.                             | Inline; displays an image.                                                |
+| **Use Case**        | Images, charts, or code with captions.                                      | Standalone images without captions.                                      |
+| **Accessibility**   | Screen readers treat as a grouped unit; `<figcaption>` adds context.        | Screen readers rely on `alt` attribute for description.                   |
+| **Example**         | ```html<br><figure><br>    <img src="photo.jpg" alt="Nature"><br>    <figcaption>A landscape.</figcaption><br></figure><br>```<br>*Image with caption.* | ```html<br><img src="logo.png" alt="Logo"><br>```<br>*Standalone logo.* |
+
+## Notes
+- **Selection Criteria**: The tag pairs were chosen based on common developer confusion, as observed in web development practices and documentation (e.g., MDN, W3Schools).
+- **Focus on Clarity**: Each table emphasizes key differences, avoiding excessive detail to align with the request for concise comparisons.
+- **Modern Usage**: Comparisons reflect HTML5 standards and modern web development trends, prioritizing semantic tags and accessibility.
+- **Accessibility**: Semantic tags (e.g., `<strong>`, `<em>`) improve screen reader compatibility, while non-semantic tags (e.g., `<b>`, `<i>`) are purely stylistic.
+- **Validation**: Use the W3C Markup Validator to ensure proper tag usage in practice.
+
+## Conclusion
+Understanding the differences between similar HTML5 tags, such as `<div>` vs. `<span>` or `<b>` vs. `<strong>`, is crucial for effective web development. By choosing the appropriate tag based on semantics, display type, and use case, developers can create accessible, maintainable, and SEO-friendly web pages. The tables above provide a clear reference for distinguishing these tags, with examples illustrating their practical application in modern web design.

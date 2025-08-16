@@ -1,0 +1,1239 @@
+# HTML Tags: Most Commonly Used, Void Elements, and Other Tags with Examples
+
+This document organizes all **HTML5 tags** into three sections: **Most Commonly Used Tags**, **Void Elements**, and **Other Tags**. Each tag includes a brief description and a practical example demonstrating its usage in a web context. The **Most Commonly Used Tags** are selected based on their prevalence in modern web development (e.g., frameworks like React, Angular, or CMS platforms like WordPress). **Void Elements** are self-closing tags that cannot contain content, and **Other Tags** cover the remaining HTML5 tags. Examples are concise, focusing on real-world applications without excessive detail.
+
+## Most Commonly Used HTML Tags
+
+These tags are frequently used by developers due to their versatility, semantic value, and essential functionality in web development. They are prevalent in layouts, forms, navigation, and multimedia, as seen in modern frameworks and applications.
+
+1. **`<div>`**:
+
+   - **Purpose**: Generic container for grouping and styling content.
+   - **Example**:
+     ```html
+     <div class="container">
+       <h1>Welcome</h1>
+       <p>This is a section.</p>
+     </div>
+     ```
+     _Description_: Groups content for styling with CSS or JavaScript manipulation.
+
+2. **`<span>`**:
+
+   - **Purpose**: Inline container for styling or scripting small text portions.
+   - **Example**:
+     ```html
+     <p>Price: <span class="highlight">$99.99</span></p>
+     ```
+     _Description_: Highlights the price within a paragraph for styling.
+
+3. **`<a>`**:
+
+   - **Purpose**: Creates a hyperlink to another page or resource.
+   - **Example**:
+     ```html
+     <a href="https://example.com">Visit Example</a>
+     ```
+     _Description_: Links to an external website.
+
+4. **`<p>`**:
+
+   - **Purpose**: Defines a paragraph of text.
+   - **Example**:
+     ```html
+     <p>This is a paragraph about our services.</p>
+     ```
+     _Description_: Displays a block of text content.
+
+5. **`<h1>` to `<h6>`**:
+
+   - **Purpose**: Define headings, with `<h1>` as the highest level.
+   - **Example**:
+     ```html
+     <h1>Main Title</h1>
+     <h2>Section Title</h2>
+     ```
+     _Description_: Structures content with a main and secondary heading for SEO.
+
+6. **`<img>`**:
+
+   - **Purpose**: Embeds an image.
+   - **Example**:
+     ```html
+     <img src="logo.png" alt="Company Logo" />
+     ```
+     _Description_: Displays a logo with an accessible description.
+
+7. **`<ul>`**:
+
+   - **Purpose**: Creates an unordered (bulleted) list.
+   - **Example**:
+     ```html
+     <ul>
+       <li>Home</li>
+       <li>About</li>
+       <li>Contact</li>
+     </ul>
+     ```
+     _Description_: Creates a navigation menu with bullet points.
+
+8. **`<ol>`**:
+
+   - **Purpose**: Creates an ordered (numbered) list.
+   - **Example**:
+     ```html
+     <ol>
+       <li>Step 1: Sign up</li>
+       <li>Step 2: Log in</li>
+     </ol>
+     ```
+     _Description_: Lists steps in a tutorial with numbers.
+
+9. **`<li>`**:
+
+   - **Purpose**: Defines a list item in `<ul>` or `<ol>`.
+   - **Example**:
+     ```html
+     <ul>
+       <li>Apples</li>
+       <li>Oranges</li>
+     </ul>
+     ```
+     _Description_: Lists items in a bulleted list.
+
+10. **`<form>`**:
+
+    - **Purpose**: Creates a form for user input.
+    - **Example**:
+      ```html
+      <form action="/submit" method="POST">
+        <input type="text" name="username" />
+        <button type="submit">Submit</button>
+      </form>
+      ```
+      _Description_: Creates a login form that submits data to a server.
+
+11. **`<input>`**:
+
+    - **Purpose**: Creates an input field for forms.
+    - **Example**:
+      ```html
+      <input type="email" name="email" placeholder="Enter email" />
+      ```
+      _Description_: Collects an email address in a form.
+
+12. **`<button>`**:
+
+    - **Purpose**: Creates an interactive button.
+    - **Example**:
+      ```html
+      <button onclick="submitForm()">Click Me</button>
+      ```
+      _Description_: Triggers a JavaScript function when clicked.
+
+13. **`<label>`**:
+
+    - **Purpose**: Associates a label with a form control.
+    - **Example**:
+      ```html
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      ```
+      _Description_: Improves accessibility by linking a label to an input.
+
+14. **`<script>`**:
+
+    - **Purpose**: Embeds or links JavaScript code.
+    - **Example**:
+      ```html
+      <script src="app.js"></script>
+      ```
+      _Description_: Links an external JavaScript file for interactivity.
+
+15. **`<link>`**:
+
+    - **Purpose**: Links external resources, like CSS files.
+    - **Example**:
+      ```html
+      <link rel="stylesheet" href="styles.css" />
+      ```
+      _Description_: Connects a CSS stylesheet to style the page.
+
+16. **`<meta>`**:
+
+    - **Purpose**: Provides metadata, like character encoding or viewport settings.
+    - **Example**:
+      ```html
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      ```
+      _Description_: Ensures proper character encoding and responsive design.
+
+17. **`<title>`**:
+
+    - **Purpose**: Sets the document’s title for browser tabs and SEO.
+    - **Example**:
+      ```html
+      <title>My Website</title>
+      ```
+      _Description_: Displays "My Website" in the browser tab.
+
+18. **`<body>`**:
+
+    - **Purpose**: Contains all visible content.
+    - **Example**:
+      ```html
+      <body>
+        <h1>Hello World</h1>
+        <p>Welcome to my site.</p>
+      </body>
+      ```
+      _Description_: Holds the page’s visible content.
+
+19. **`<head>`**:
+
+    - **Purpose**: Contains metadata and resources.
+    - **Example**:
+      ```html
+      <head>
+        <title>My Page</title>
+        <meta charset="UTF-8" />
+      </head>
+      ```
+      _Description_: Sets up the document with metadata.
+
+20. **`<html>`**:
+
+    - **Purpose**: The root element of the HTML document.
+    - **Example**:
+      ```html
+      <html lang="en">
+        <head></head>
+        <body></body>
+      </html>
+      ```
+      _Description_: Defines the document’s structure with English as the language.
+
+21. **`<header>`**:
+
+    - **Purpose**: Defines introductory or navigation sections.
+    - **Example**:
+      ```html
+      <header>
+        <h1>Site Title</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+      ```
+      _Description_: Creates a header with a title and navigation.
+
+22. **`<footer>`**:
+
+    - **Purpose**: Represents the footer section.
+    - **Example**:
+      ```html
+      <footer>
+        <p>&copy; 2025 My Website</p>
+      </footer>
+      ```
+      _Description_: Displays copyright information in the footer.
+
+23. **`<main>`**:
+
+    - **Purpose**: Marks the main content area.
+    - **Example**:
+      ```html
+      <main>
+        <article>Blog content here</article>
+      </main>
+      ```
+      _Description_: Defines the primary content section.
+
+24. **`<nav>`**:
+
+    - **Purpose**: Defines a navigation section with links.
+    - **Example**:
+      ```html
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      ```
+      _Description_: Creates a navigation menu.
+
+25. **`<section>`**:
+
+    - **Purpose**: Defines a thematic section of content.
+    - **Example**:
+      ```html
+      <section>
+        <h2>About Us</h2>
+        <p>Our mission statement.</p>
+      </section>
+      ```
+      _Description_: Groups related content, like an "About" section.
+
+26. **`<article>`**:
+
+    - **Purpose**: Represents independent content, like a blog post.
+    - **Example**:
+      ```html
+      <article>
+        <h2>News Update</h2>
+        <p>Latest news content.</p>
+      </article>
+      ```
+      _Description_: Defines a standalone blog post.
+
+27. **`<aside>`**:
+
+    - **Purpose**: Contains secondary or tangential content.
+    - **Example**:
+      ```html
+      <aside>
+        <h3>Related Links</h3>
+        <ul>
+          <li><a href="/link">Link</a></li>
+        </ul>
+      </aside>
+      ```
+      _Description_: Creates a sidebar with related links.
+
+28. **`<table>`**:
+
+    - **Purpose**: Displays tabular data.
+    - **Example**:
+      ```html
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>30</td>
+        </tr>
+      </table>
+      ```
+      _Description_: Shows a table of names and ages.
+
+29. **`<tr>`**:
+
+    - **Purpose**: Defines a table row.
+    - **Example**:
+      ```html
+      <table>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+        </tr>
+      </table>
+      ```
+      _Description_: Defines a row in a table.
+
+30. **`<td>`**:
+
+    - **Purpose**: Defines a table cell.
+    - **Example**:
+      ```html
+      <table>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </table>
+      ```
+      _Description_: Adds data cells to a table row.
+
+31. **`<th>`**:
+
+    - **Purpose**: Defines a table header cell.
+    - **Example**:
+      ```html
+      <table>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+      </table>
+      ```
+      _Description_: Specifies table headers.
+
+32. **`<video>`**:
+
+    - **Purpose**: Embeds video content.
+    - **Example**:
+      ```html
+      <video src="movie.mp4" controls>Video not supported.</video>
+      ```
+      _Description_: Plays a video with playback controls.
+
+33. **`<audio>`**:
+
+    - **Purpose**: Embeds audio content.
+    - **Example**:
+      ```html
+      <audio src="song.mp3" controls>Audio not supported.</audio>
+      ```
+      _Description_: Plays an audio file with controls.
+
+34. **`<iframe>`**:
+    - **Purpose**: Embeds another HTML document.
+    - **Example**:
+      ```html
+      <iframe src="https://example.com" width="600" height="400"></iframe>
+      ```
+      _Description_: Embeds an external webpage.
+
+## Void Elements in HTML5
+
+**Void elements** are self-closing tags that do not have closing tags and cannot contain content. They are used for standalone functionality, such as inserting images, metadata, or breaks. Below is the complete list of HTML5 void elements, each with a description and a practical example.
+
+1. **`<area>`**:
+
+   - **Purpose**: Defines a clickable area within an image map.
+   - **Example**:
+     ```html
+     <img src="map.jpg" alt="World Map" usemap="#worldmap" />
+     <map name="worldmap">
+       <area
+         shape="rect"
+         coords="0,0,100,100"
+         href="asia.html"
+         alt="Asia Region"
+       />
+     </map>
+     ```
+     _Description_: Creates a clickable rectangular area on an image map linking to "asia.html".
+
+2. **`<base>`**:
+
+   - **Purpose**: Specifies the base URL for relative URLs.
+   - **Example**:
+     ```html
+     <head>
+       <base href="https://example.com/" />
+     </head>
+     <body>
+       <a href="page.html">Link</a>
+       <!-- Resolves to https://example.com/page.html -->
+     </body>
+     ```
+     _Description_: Sets the base URL for all relative links.
+
+3. **`<br>`**:
+
+   - **Purpose**: Inserts a line break within text.
+   - **Example**:
+     ```html
+     <p>Contact us:<br />123 Main St<br />City, Country</p>
+     ```
+     _Description_: Breaks an address into multiple lines.
+
+4. **`<col>`**:
+
+   - **Purpose**: Specifies properties for a table column.
+   - **Example**:
+     ```html
+     <table>
+       <colgroup>
+         <col span="1" style="background-color: #f0f0f0;" />
+         <col span="1" style="background-color: #ffffff;" />
+       </colgroup>
+       <tr>
+         <td>Cell 1</td>
+         <td>Cell 2</td>
+       </tr>
+     </table>
+     ```
+     _Description_: Applies background colors to table columns.
+
+5. **`<embed>`**:
+
+   - **Purpose**: Embeds external content, like plugins or media.
+   - **Example**:
+     ```html
+     <embed type="video/mp4" src="video.mp4" width="400" height="300" />
+     ```
+     _Description_: Embeds a video file directly.
+
+6. **`<hr>`**:
+
+   - **Purpose**: Inserts a horizontal rule or thematic break.
+   - **Example**:
+     ```html
+     <p>Section 1 content.</p>
+     <hr />
+     <p>Section 2 content.</p>
+     ```
+     _Description_: Separates two sections with a horizontal line.
+
+7. **`<img>`**:
+
+   - **Purpose**: Embeds an image.
+   - **Example**:
+     ```html
+     <img src="photo.jpg" alt="Nature Scene" width="300" />
+     ```
+     _Description_: Displays an image with an accessible description.
+
+8. **`<input>`**:
+
+   - **Purpose**: Creates an input field for forms.
+   - **Example**:
+     ```html
+     <input type="text" name="search" placeholder="Search..." />
+     ```
+     _Description_: Creates a text input for a search bar.
+
+9. **`<link>`**:
+
+   - **Purpose**: Links external resources, like CSS.
+   - **Example**:
+     ```html
+     <link rel="stylesheet" href="styles.css" />
+     ```
+     _Description_: Connects a CSS stylesheet.
+
+10. **`<meta>`**:
+
+    - **Purpose**: Provides metadata for the document.
+    - **Example**:
+      ```html
+      <meta name="description" content="A sample website" />
+      ```
+      _Description_: Adds a description for SEO.
+
+11. **`<param>`**:
+
+    - **Purpose**: Sets parameters for an `<object>` element.
+    - **Example**:
+      ```html
+      <object data="movie.swf">
+        <param name="autoplay" value="true" />
+      </object>
+      ```
+      _Description_: Configures autoplay for an embedded Flash object.
+
+12. **`<source>`**:
+
+    - **Purpose**: Specifies media resources for `<picture>`, `<audio>`, or `<video>`.
+    - **Example**:
+      ```html
+      <video controls>
+        <source src="movie.mp4" type="video/mp4" />
+        Video not supported.
+      </video>
+      ```
+      _Description_: Provides a video source with MIME type.
+
+13. **`<track>`**:
+
+    - **Purpose**: Specifies text tracks (e.g., subtitles) for `<video>` or `<audio>`.
+    - **Example**:
+      ```html
+      <video controls>
+        <source src="movie.mp4" type="video/mp4" />
+        <track
+          src="subtitles.vtt"
+          kind="subtitles"
+          srclang="en"
+          label="English"
+        />
+      </video>
+      ```
+      _Description_: Adds English subtitles to a video.
+
+14. **`<wbr>`**:
+    - **Purpose**: Indicates a potential word break opportunity.
+    - **Example**:
+      ```html
+      <p>Super<wbr />califragilistic<wbr />expialidocious</p>
+      ```
+      _Description_: Suggests break points in a long word for better text wrapping.
+
+## Other Tags
+
+These are the remaining HTML5 tags that are neither void elements nor among the most commonly used. They serve specialized or less frequent purposes but are still part of the HTML5 specification. Each includes a description and example.
+
+1. **`<abbr>`**:
+
+   - **Purpose**: Represents an abbreviation or acronym.
+   - **Example**:
+     ```html
+     <abbr title="World Wide Web">WWW</abbr>
+     ```
+     _Description_: Displays "WWW" with a tooltip for its full form.
+
+2. **`<address>`**:
+
+   - **Purpose**: Indicates contact information.
+   - **Example**:
+     ```html
+     <address>
+       Email: <a href="mailto:info@example.com">info@example.com</a>
+     </address>
+     ```
+     _Description_: Provides contact details for the site owner.
+
+3. **`<article>`**:
+
+   - **Purpose**: Represents independent content, like a blog post.
+   - **Example**:
+     ```html
+     <article>
+       <h2>Tech News</h2>
+       <p>Latest updates in technology.</p>
+     </article>
+     ```
+     _Description_: Defines a standalone article.
+
+4. **`<audio>`**:
+
+   - **Purpose**: Embeds audio content.
+   - **Example**:
+     ```html
+     <audio src="podcast.mp3" controls>Audio not supported.</audio>
+     ```
+     _Description_: Plays a podcast with controls.
+
+5. **`<b>`**:
+
+   - **Purpose**: Applies bold styling (non-semantic).
+   - **Example**:
+     ```html
+     <p>This is <b>bold</b> text.</p>
+     ```
+     _Description_: Bolds text for visual emphasis.
+
+6. **`<bdi>`**:
+
+   - **Purpose**: Isolates bidirectional text (e.g., mixed languages).
+   - **Example**:
+     ```html
+     <p>User: <bdi>إسم المستخدم</bdi></p>
+     ```
+     _Description_: Ensures proper rendering of Arabic text in a mixed-language context.
+
+7. **`<bdo>`**:
+
+   - **Purpose**: Overrides text directionality.
+   - **Example**:
+     ```html
+     <p><bdo dir="rtl">Reverse this text</bdo></p>
+     ```
+     _Description_: Displays text right-to-left.
+
+8. **`<blockquote>`**:
+
+   - **Purpose**: Indicates a block of quoted text.
+   - **Example**:
+     ```html
+     <blockquote cite="https://example.com">
+       <p>A famous quote.</p>
+     </blockquote>
+     ```
+     _Description_: Quotes text from an external source.
+
+9. **`<canvas>`**:
+
+   - **Purpose**: Provides a drawing surface for JavaScript graphics.
+   - **Example**:
+     ```html
+     <canvas id="myCanvas" width="200" height="100"></canvas>
+     <script>
+       let canvas = document.getElementById("myCanvas");
+       let ctx = canvas.getContext("2d");
+       ctx.fillRect(0, 0, 50, 50);
+     </script>
+     ```
+     _Description_: Draws a rectangle using JavaScript.
+
+10. **`<caption>`**:
+
+    - **Purpose**: Defines a caption for a table.
+    - **Example**:
+      ```html
+      <table>
+        <caption>
+          Monthly Sales
+        </caption>
+        <tr>
+          <th>Month</th>
+          <th>Sales</th>
+        </tr>
+      </table>
+      ```
+      _Description_: Adds a caption to a sales table.
+
+11. **`<cite>`**:
+
+    - **Purpose**: Indicates a citation or reference.
+    - **Example**:
+      ```html
+      <p>From <cite>The Great Book</cite> by Author.</p>
+      ```
+      _Description_: Cites the source of a quote.
+
+12. **`<code>`**:
+
+    - **Purpose**: Displays inline code snippets.
+    - **Example**:
+      ```html
+      <p>Use <code>console.log()</code> to debug.</p>
+      ```
+      _Description_: Shows a JavaScript function inline.
+
+13. **`<colgroup>`**:
+
+    - **Purpose**: Groups columns in a table for styling.
+    - **Example**:
+      ```html
+      <table>
+        <colgroup>
+          <col span="2" style="background-color: #f0f0f0;" />
+        </colgroup>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+      </table>
+      ```
+      _Description_: Applies styling to table columns.
+
+14. **`<data>`**:
+
+    - **Purpose**: Associates machine-readable data with content.
+    - **Example**:
+      ```html
+      <p>Product: <data value="123">Widget</data></p>
+      ```
+      _Description_: Links a product name to a machine-readable ID.
+
+15. **`<datalist>`**:
+
+    - **Purpose**: Provides predefined options for an input.
+    - **Example**:
+      ```html
+      <input list="colors" />
+      <datalist id="colors">
+        <option value="Red"></option>
+        <option value="Blue"></option>
+      </datalist>
+      ```
+      _Description_: Offers autocomplete options for a text input.
+
+16. **`<dd>`**:
+
+    - **Purpose**: Describes a term in a description list.
+    - **Example**:
+      ```html
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+      </dl>
+      ```
+      _Description_: Describes "HTML" in a definition list.
+
+17. **`<del>`**:
+
+    - **Purpose**: Marks deleted text.
+    - **Example**:
+      ```html
+      <p>Price: <del>$100</del> Now $80</p>
+      ```
+      _Description_: Shows a discounted price with strikethrough.
+
+18. **`<details>`**:
+
+    - **Purpose**: Creates an expandable/collapsible section.
+    - **Example**:
+      ```html
+      <details>
+        <summary>More Info</summary>
+        <p>Additional details here.</p>
+      </details>
+      ```
+      _Description_: Hides content until the user clicks to expand.
+
+19. **`<dfn>`**:
+
+    - **Purpose**: Defines a term or concept.
+    - **Example**:
+      ```html
+      <p><dfn>API</dfn> is an Application Programming Interface.</p>
+      ```
+      _Description_: Defines the term "API".
+
+20. **`<dialog>`**:
+
+    - **Purpose**: Represents a dialog box or modal.
+    - **Example**:
+      ```html
+      <dialog open>
+        <p>This is a modal window.</p>
+      </dialog>
+      ```
+      _Description_: Displays a modal dialog (requires JavaScript for interactivity).
+
+21. **`<dl>`**:
+
+    - **Purpose**: Defines a description list.
+    - **Example**:
+      ```html
+      <dl>
+        <dt>Term</dt>
+        <dd>Definition</dd>
+      </dl>
+      ```
+      _Description_: Creates a list of terms and definitions.
+
+22. **`<dt>`**:
+
+    - **Purpose**: Specifies a term in a description list.
+    - **Example**:
+      ```html
+      <dl>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+      ```
+      _Description_: Defines a term in a description list.
+
+23. **`<em>`**:
+
+    - **Purpose**: Emphasizes text, typically italicized.
+    - **Example**:
+      ```html
+      <p>This is <em>very</em> important.</p>
+      ```
+      _Description_: Emphasizes the word "very".
+
+24. **`<fieldset>`**:
+
+    - **Purpose**: Groups related form elements.
+    - **Example**:
+      ```html
+      <form>
+        <fieldset>
+          <legend>User Info</legend>
+          <input type="text" name="name" />
+        </fieldset>
+      </form>
+      ```
+      _Description_: Groups form fields under a "User Info" section.
+
+25. **`<figcaption>`**:
+
+    - **Purpose**: Provides a caption for a `<figure>`.
+    - **Example**:
+      ```html
+      <figure>
+        <img src="photo.jpg" alt="Nature" />
+        <figcaption>A beautiful landscape.</figcaption>
+      </figure>
+      ```
+      _Description_: Captions an image in a figure.
+
+26. **`<figure>`**:
+
+    - **Purpose**: Represents self-contained content, like images.
+    - **Example**:
+      ```html
+      <figure>
+        <img src="chart.png" alt="Sales Chart" />
+        <figcaption>2025 Sales Data</figcaption>
+      </figure>
+      ```
+      _Description_: Groups an image with its caption.
+
+27. **`<hgroup>`**:
+
+    - **Purpose**: Groups multiple headings.
+    - **Example**:
+      ```html
+      <hgroup>
+        <h1>Main Title</h1>
+        <h2>Subtitle</h2>
+      </hgroup>
+      ```
+      _Description_: Groups a title and subtitle for clarity.
+
+28. **`<i>`**:
+
+    - **Purpose**: Applies italic styling (non-semantic).
+    - **Example**:
+      ```html
+      <p>This is <i>italic</i> text.</p>
+      ```
+      _Description_: Italicizes text for visual effect.
+
+29. **`<kbd>`**:
+
+    - **Purpose**: Represents keyboard input or commands.
+    - **Example**:
+      ```html
+      <p>Press <kbd>Ctrl + S</kbd> to save.</p>
+      ```
+      _Description_: Shows a keyboard shortcut.
+
+30. **`<legend>`**:
+
+    - **Purpose**: Provides a caption for a `<fieldset>`.
+    - **Example**:
+      ```html
+      <form>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <input type="text" name="name" />
+        </fieldset>
+      </form>
+      ```
+      _Description_: Labels a form section.
+
+31. **`<mark>`**:
+
+    - **Purpose**: Highlights text for emphasis.
+    - **Example**:
+      ```html
+      <p>Search results for <mark>HTML</mark>.</p>
+      ```
+      _Description_: Highlights a search term.
+
+32. **`<menu>`**:
+
+    - **Purpose**: Represents a list of commands (less common).
+    - **Example**:
+      ```html
+      <menu>
+        <li><button onclick="copy()">Copy</button></li>
+      </menu>
+      ```
+      _Description_: Creates a menu of commands.
+
+33. **`<meter>`**:
+
+    - **Purpose**: Represents a scalar measurement.
+    - **Example**:
+      ```html
+      <meter value="70" min="0" max="100">70%</meter>
+      ```
+      _Description_: Shows 70% completion.
+
+34. **`<noscript>`**:
+
+    - **Purpose**: Displays content when JavaScript is disabled.
+    - **Example**:
+      ```html
+      <script>
+        document.write("JavaScript enabled");
+      </script>
+      <noscript>JavaScript is disabled.</noscript>
+      ```
+      _Description_: Shows a message if JavaScript is off.
+
+35. **`<object>`**:
+
+    - **Purpose**: Embeds external objects, like PDFs.
+    - **Example**:
+      ```html
+      <object
+        data="document.pdf"
+        type="application/pdf"
+        width="600"
+        height="400"
+      >
+        PDF not supported.
+      </object>
+      ```
+      _Description_: Embeds a PDF document.
+
+36. **`<optgroup>`**:
+
+    - **Purpose**: Groups options in a `<select>` element.
+    - **Example**:
+      ```html
+      <select>
+        <optgroup label="Fruits">
+          <option>Apple</option>
+          <option>Orange</option>
+        </optgroup>
+      </select>
+      ```
+      _Description_: Groups related dropdown options.
+
+37. **`<option>`**:
+
+    - **Purpose**: Defines an option in a `<select>` or `<datalist>`.
+    - **Example**:
+      ```html
+      <select>
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+      </select>
+      ```
+      _Description_: Provides dropdown choices.
+
+38. **`<output>`**:
+
+    - **Purpose**: Displays the result of a calculation.
+    - **Example**:
+      ```html
+      <form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+        <input type="number" id="a" /> + <input type="number" id="b" /> =
+        <output name="result">0</output>
+      </form>
+      ```
+      _Description_: Shows the sum of two inputs.
+
+39. **`<pre>`**:
+
+    - **Purpose**: Displays preformatted text, preserving whitespace.
+    - **Example**:
+      ```html
+      <pre>
+      function hello() {
+          console.log("Hello");
+      }
+      </pre>
+      ```
+      _Description_: Displays code with preserved formatting.
+
+40. **`<progress>`**:
+
+    - **Purpose**: Represents task progress.
+    - **Example**:
+      ```html
+      <progress value="50" max="100">50%</progress>
+      ```
+      _Description_: Shows 50% task completion.
+
+41. **`<q>`**:
+
+    - **Purpose**: Indicates a short inline quotation.
+    - **Example**:
+      ```html
+      <p>She said, <q>Let's learn HTML!</q></p>
+      ```
+      _Description_: Quotes a short phrase.
+
+42. **`<rp>`**:
+
+    - **Purpose**: Provides fallback text for ruby annotations.
+    - **Example**:
+      ```html
+      <ruby> 漢<rp>(</rp><rt>kan</rt><rp>)</rp> </ruby>
+      ```
+      _Description_: Provides parentheses for browsers not supporting ruby text.
+
+43. **`<rt>`**:
+
+    - **Purpose**: Specifies ruby text for East Asian typography.
+    - **Example**:
+      ```html
+      <ruby> 漢字<rt>kanji</rt> </ruby>
+      ```
+      _Description_: Annotates "kanji" pronunciation.
+
+44. **`<ruby>`**:
+
+    - **Purpose**: Represents ruby annotations for East Asian characters.
+    - **Example**:
+      ```html
+      <ruby> 日本語<rt>nihongo</rt> </ruby>
+      ```
+      _Description_: Annotates Japanese text with pronunciation.
+
+45. **`<s>`**:
+
+    - **Purpose**: Marks text that is no longer accurate.
+    - **Example**:
+      ```html
+      <p>Old price: <s>$50</s> New price: $40</p>
+      ```
+      _Description_: Strikethroughs an outdated price.
+
+46. **`<samp>`**:
+
+    - **Purpose**: Represents sample output from a program.
+    - **Example**:
+      ```html
+      <p>Error: <samp>File not found</samp></p>
+      ```
+      _Description_: Shows a program error message.
+
+47. **`<small>`**:
+
+    - **Purpose**: Represents smaller, fine-print text.
+    - **Example**:
+      ```html
+      <p>Offer valid until 2025. <small>Terms apply.</small></p>
+      ```
+      _Description_: Displays fine print for an offer.
+
+48. **`<strong>`**:
+
+    - **Purpose**: Indicates important text, typically bold.
+    - **Example**:
+      ```html
+      <p><strong>Warning:</strong> Do not proceed.</p>
+      ```
+      _Description_: Emphasizes a warning message.
+
+49. **`<style>`**:
+
+    - **Purpose**: Embeds CSS styles.
+    - **Example**:
+      ```html
+      <style>
+        body {
+          background-color: #f0f0f0;
+        }
+      </style>
+      ```
+      _Description_: Sets a background color for the page.
+
+50. **`<sub>`**:
+
+    - **Purpose**: Defines subscript text.
+    - **Example**:
+      ```html
+      <p>H<sub>2</sub>O is water.</p>
+      ```
+      _Description_: Displays a chemical formula.
+
+51. **`<summary>`**:
+
+    - **Purpose**: Provides a summary for a `<details>` element.
+    - **Example**:
+      ```html
+      <details>
+        <summary>Click for details</summary>
+        <p>More information here.</p>
+      </details>
+      ```
+      _Description_: Creates a clickable summary for expandable content.
+
+52. **`<sup>`**:
+
+    - **Purpose**: Defines superscript text.
+    - **Example**:
+      ```html
+      <p>E = MC<sup>2</sup></p>
+      ```
+      _Description_: Displays a mathematical formula.
+
+53. **`<tbody>`**:
+
+    - **Purpose**: Groups the body content of a table.
+    - **Example**:
+      ```html
+      <table>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </tbody>
+      </table>
+      ```
+      _Description_: Groups table body rows.
+
+54. **`<template>`**:
+
+    - **Purpose**: Holds reusable content not rendered until activated.
+    - **Example**:
+      ```html
+      <template id="myTemplate">
+        <p>Template content</p>
+      </template>
+      <script>
+        document.body.append(document.getElementById("myTemplate").content);
+      </script>
+      ```
+      _Description_: Stores content for JavaScript rendering.
+
+55. **`<textarea>`**:
+
+    - **Purpose**: Creates a multi-line text input.
+    - **Example**:
+      ```html
+      <textarea rows="4" cols="50">Enter your message...</textarea>
+      ```
+      _Description_: Allows users to input a message.
+
+56. **`<tfoot>`**:
+
+    - **Purpose**: Groups the footer content of a table.
+    - **Example**:
+      ```html
+      <table>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>$100</td>
+          </tr>
+        </tfoot>
+      </table>
+      ```
+      _Description_: Defines a table footer with totals.
+
+57. **`<thead>`**:
+
+    - **Purpose**: Groups the header content of a table.
+    - **Example**:
+      ```html
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+      </table>
+      ```
+      _Description_: Defines table headers.
+
+58. **`<time>`**:
+
+    - **Purpose**: Represents a specific time or date.
+    - **Example**:
+      ```html
+      <p>Event on <time datetime="2025-08-16">August 16, 2025</time>.</p>
+      ```
+      _Description_: Marks a specific date for semantics.
+
+59. **`<u>`**:
+
+    - **Purpose**: Applies underlined styling (non-semantic).
+    - **Example**:
+      ```html
+      <p>This is <u>underlined</u> text.</p>
+      ```
+      _Description_: Underlines text for visual effect.
+
+60. **`<var>`**:
+    - **Purpose**: Represents a variable in mathematical or programming contexts.
+    - **Example**:
+      ```html
+      <p>Let <var>x</var> = 5 in the equation.</p>
+      ```
+      _Description_: Denotes a variable in a formula.
+
+## Notes
+
+- **Total Tags**: The HTML5 specification includes 106 tags, with 14 void elements and 34 commonly used tags based on developer practices.
+- **Void Elements**: These tags are self-closing and cannot contain content, making them distinct from other tags.
+- **Commonly Used Tags**: Selected based on their frequency in modern web development, including frameworks, CMS platforms, and semantic layouts.
+- **Examples**: Each example is concise, practical, and reflects typical use cases, ensuring clarity without overwhelming detail.
+- **Deprecated Tags**: Obsolete tags like `<font>` or `<center>` are excluded, as they are not part of HTML5.
+- **Validation**: Use the W3C Markup Validator to ensure correct tag usage.
+
+## Conclusion
+
+HTML5 provides a robust set of tags for structuring web content, with **commonly used tags** like `<div>`, `<a>`, and `<form>` driving modern layouts and interactivity. **Void elements** like `<img>` and `<meta>` offer standalone functionality, while **other tags** like `<ruby>` or `<meter>` serve specialized purposes. By understanding and applying these tags with their respective examples, developers can create accessible, semantic, and efficient web pages tailored to diverse use cases.

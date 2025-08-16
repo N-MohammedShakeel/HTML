@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>IMAGES IN HTML</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Example</title>
   </head>
-    <!-- Local Images -->
-    <img src="images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt="Programming Image" width="200px" height="200px">
-    <!-- remote Images -->
-  <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image">
+  <body>
+    <!-- Basic Image -->
+    <h2>Basic Image</h2>
+    <img src="images/image.png" alt="Placeholder Example Image" />
 
+    <!-- Image with Size -->
+    <h2>Resized Image (Width & Height)</h2>
+    <img
+      src="images/image.png"
+      alt="Resized Example"
+      width="300"
+      height="200"
+    />
 
+    <!-- Image with Caption -->
+    <h2>Image with Caption (Figure + Figcaption)</h2>
+    <figure>
+      <img src="images/image.png" alt="Sample Image with Caption" />
+      <figcaption>This is a caption for the image.</figcaption>
+    </figure>
+
+    <!-- Linked Image -->
+    <h2>Image as a Link</h2>
+    <a href="https://www.google.com" target="_blank">
+      <img src="images/image.png" alt="Clickable Image Link" />
+    </a>
   </body>
 </html>

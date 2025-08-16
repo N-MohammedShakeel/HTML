@@ -3,15 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Video and Audio Example</title>
   </head>
   <body>
-    <video
-      style="width: 400px"
-      controls
-      src="5874390-uhd_4096_2160_30fps.mp4"
-    ></video>
+    <h1>HTML5 Video and Audio Example</h1>
 
-    <audio controls src="astral-creepy-dark-logo-254198.mp3"></audio>
+    <!-- Video Example -->
+    <section>
+      <h2>Video Example</h2>
+      <video width="500" controls>
+        <source src="sample-video.mp4" type="video/mp4" />
+        <source src="sample-video.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <p>This is a sample video with play, pause, and volume controls.</p>
+    </section>
+
+    <!-- Video with Autoplay & Loop -->
+    <section>
+      <h2>Autoplay & Loop Video</h2>
+      <video width="400" autoplay loop muted>
+        <source src="sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>This video auto-plays, loops, and is muted.</p>
+    </section>
+
+    <!-- Audio Example -->
+    <section>
+      <h2>Audio Example</h2>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mp3" />
+        <source src="sample-audio.ogg" type="audio/ogg" />
+        Your browser does not support the audio element.
+      </audio>
+      <p>This is a sample audio file with play and volume controls.</p>
+    </section>
+
+    <!-- Audio with Autoplay -->
+    <section>
+      <h2>Autoplay Audio</h2>
+      <audio autoplay loop>
+        <source src="sample-audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <p>This audio auto-plays and loops in the background.</p>
+    </section>
   </body>
 </html>

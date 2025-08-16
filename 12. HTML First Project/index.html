@@ -3,82 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="MS Dev Portfolio - Web Developer showcasing projects, photography, and contact info."
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, Web Developer, HTML, Projects, Photography, MS Dev"
+    />
+    <meta name="author" content="MS Dev" />
+    <title>MS Dev Portfolio</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <header>
-      <h1>MS Dev</h1>
+    <!-- Hero Section -->
+    <header id="home">
+      <h1>👨‍💻 MS Dev</h1>
       <h2>Welcome to my personal site!</h2>
       <section>
-        <img src="ms.png" alt="me" width="400px" height="50%" />
-        <p>This is me, Cute ha? 👀</p>
+        <img src="ms.png" alt="Portrait of MS Dev" width="300" />
+        <p>
+          Hello! I'm <strong>MS Dev</strong>, a passionate web developer and
+          creative enthusiast.
+        </p>
       </section>
     </header>
 
-    <section>
-      <h1>Follow Me On Social Media</h1>
-      <ol>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Udemy</a></li>
-        <li><a href="">GitHub</a></li>
-        <li><a href="">Instagram</a></li>
-      </ol>
-    </section>
+    <!-- About -->
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I’m a developer who loves building interactive websites, experimenting
+          with new tech, and sharing knowledge with the world.
+        </p>
+      </section>
 
-    <a href="anotherpage.html">Check Out My Super Awesome Website</a>
-    <section>
-      <!-- Get Images from Unsplash -->
-      <h1>Check out my photography 👀</h1>
-      <img
-        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-        alt="Nature Images"
-        width="200px"
-        height="200px"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-        alt="Nature Images"
-        width="200px"
-        height="200px"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-        alt="Nature Images"
-        width="200px"
-        height="200px"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-        alt="Nature Images"
-        width="200px"
-        height="200px"
-      />
-    </section>
+      <!-- Projects -->
+      <section id="projects">
+        <h2>My Projects</h2>
+        <article>
+          <h3>🚀 Project 1</h3>
+          <p>A web app that simplifies task management.</p>
+        </article>
+        <article>
+          <h3>📸 Project 2</h3>
+          <p>A photography portfolio website built with HTML & CSS.</p>
+        </article>
+      </section>
 
-    <footer>
-      <h1>Follow Me On Social Media</h1>
-      <ol>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Udemy</a></li>
-        <li><a href="">GitHub</a></li>
-        <li><a href="">Instagram</a></li>
-      </ol>
+      <!-- Photography -->
+      <section id="photography">
+        <h2>Check out my photography 👀</h2>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=60"
+            alt="Nature 1"
+            width="200"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=60"
+            alt="Nature 2"
+            width="200"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=600&q=60"
+            alt="Nature 3"
+            width="200"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=600&q=60"
+            alt="Nature 4"
+            width="200"
+          />
+        </div>
+      </section>
+    </main>
 
+    <!-- Footer -->
+    <footer id="contact">
+      <h2>Let’s Connect</h2>
+      <ul>
+        <li><a href="#">🐦 Twitter</a></li>
+        <li><a href="#">🎓 Udemy</a></li>
+        <li><a href="#">💻 GitHub</a></li>
+        <li><a href="#">📸 Instagram</a></li>
+      </ul>
+
+      <h3>Contact Me</h3>
       <form>
-        <input type="text" placeholder="Enter Your Name" />
-        <input type="email" placeholder="Enter Your Email" />
-        <textarea cols="30" rows="10" placeholder="Any Thoughts?"></textarea>
+        <input type="text" placeholder="Enter Your Name" required />
+        <input type="email" placeholder="Enter Your Email" required />
+        <textarea
+          cols="30"
+          rows="5"
+          placeholder="Any Thoughts?"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
       </form>
-      <button>Submit</button>
+
+      <p>&copy; 2025 MS Dev | All Rights Reserved</p>
     </footer>
   </body>
 </html>

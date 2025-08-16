@@ -1,21 +1,73 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samantic HTML</title>
+    <title>Semantic HTML Example</title>
   </head>
   <body>
-    <nav></nav>
-    <header></header>
+    <!-- Header -->
+    <header>
+      <h1>My Tech Blog</h1>
+      <p>Sharing knowledge about Web, AI, and Development</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
     <main>
-      <section>
-        <article></article>
+      <!-- Article Section -->
+      <section id="articles">
+        <article>
+          <h2>Understanding Web 3.0</h2>
+          <p>
+            Web 3.0 is the next phase of the internet, focused on
+            decentralization, blockchain, and user ownership.
+          </p>
+          <p>
+            <time datetime="2025-08-16">August 16, 2025</time> • Written by
+            Shakeel
+          </p>
+        </article>
+
+        <article>
+          <h2>AI in Healthcare</h2>
+          <p>
+            Artificial Intelligence is transforming healthcare by enabling early
+            diagnosis, personalized treatments, and improved patient care.
+          </p>
+          <p>
+            <time datetime="2025-07-20">July 20, 2025</time> • Written by
+            Shakeel
+          </p>
+        </article>
       </section>
-      <section>
-        <aside></aside>
-      </section>
+
+      <!-- Sidebar -->
+      <aside>
+        <h3>Related Links</h3>
+        <ul>
+          <li><a href="#">Top 10 AI Tools</a></li>
+          <li><a href="#">Beginner's Guide to Blockchain</a></li>
+          <li><a href="#">HTML5 Best Practices</a></li>
+        </ul>
+      </aside>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 My Tech Blog | All Rights Reserved</p>
+      <p>
+        Follow me on <a href="https://twitter.com" target="_blank">Twitter</a>
+      </p>
+    </footer>
   </body>
 </html>
